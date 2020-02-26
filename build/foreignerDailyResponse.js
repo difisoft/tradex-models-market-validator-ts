@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Ajv = require("ajv");
-exports.symbolForeignerDailyResponseSchema = {
-    "id": "http://tradex.techx.vn/market/symbolForeignerDailyResponse",
+exports.foreignerDailyResponseSchema = {
+    "id": "http://tradex.techx.vn/market/foreignerDailyResponse",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "symbolForeignerDailyResponse schema",
+    "description": "foreignerDailyResponse schema",
     "type": "object",
     "properties": {
         "bv": {
@@ -41,12 +41,12 @@ exports.symbolForeignerDailyResponseSchema = {
         }
     }
 };
-let symbolForeignerDailyResponseAjv = null;
-function symbolForeignerDailyResponseValidator() {
-    if (symbolForeignerDailyResponseAjv == null) {
-        symbolForeignerDailyResponseAjv = new Ajv({ validateSchema: false }).compile(exports.symbolForeignerDailyResponseSchema);
+let foreignerDailyResponseAjv = null;
+function foreignerDailyResponseValidator() {
+    if (foreignerDailyResponseAjv == null) {
+        foreignerDailyResponseAjv = new Ajv({ validateSchema: false }).compile(exports.foreignerDailyResponseSchema);
     }
-    return symbolForeignerDailyResponseAjv;
+    return foreignerDailyResponseAjv;
 }
-exports.symbolForeignerDailyResponseValidator = symbolForeignerDailyResponseValidator;
-//# sourceMappingURL=symbolForeignerDailyResponse.js.map
+exports.foreignerDailyResponseValidator = foreignerDailyResponseValidator;
+//# sourceMappingURL=foreignerDailyResponse.js.map

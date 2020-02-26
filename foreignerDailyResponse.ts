@@ -3,10 +3,10 @@
 * This file is automatic generated
 */
 import * as Ajv from 'ajv';
-export const symbolForeignerDailyResponseSchema = {
-  "id": "http://tradex.techx.vn/market/symbolForeignerDailyResponse",
+export const foreignerDailyResponseSchema = {
+  "id": "http://tradex.techx.vn/market/foreignerDailyResponse",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "symbolForeignerDailyResponse schema",
+  "description": "foreignerDailyResponse schema",
   "type": "object",
   "properties": {
     "bv": {
@@ -43,11 +43,11 @@ export const symbolForeignerDailyResponseSchema = {
     }
   }
 };
-let symbolForeignerDailyResponseAjv = null;
-export function symbolForeignerDailyResponseValidator() {
-  if (symbolForeignerDailyResponseAjv == null) {
-    symbolForeignerDailyResponseAjv = new Ajv({validateSchema: false}).compile(symbolForeignerDailyResponseSchema);
+let foreignerDailyResponseAjv = null;
+export function foreignerDailyResponseValidator() {
+  if (foreignerDailyResponseAjv == null) {
+    foreignerDailyResponseAjv = new Ajv({validateSchema: false}).compile(foreignerDailyResponseSchema);
   }
-  return symbolForeignerDailyResponseAjv;
+  return foreignerDailyResponseAjv;
 }
       
