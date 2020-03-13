@@ -56,6 +56,13 @@ export const symbolInfoRequestSchema = {
                         "string"
                       ]
                     },
+                    "sessionId": {
+                      "description": "only use for vcsc rest",
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
                     "serviceId": {
                       "type": [
                         "null",
@@ -176,6 +183,13 @@ export const symbolInfoRequestSchema = {
                       ]
                     },
                     "connectionId": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "sessionId": {
+                      "description": "only use for vcsc rest",
                       "type": [
                         "null",
                         "string"
