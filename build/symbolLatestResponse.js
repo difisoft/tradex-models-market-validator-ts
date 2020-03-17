@@ -61,6 +61,14 @@ exports.symbolLatestResponseSchema = {
             "description": "trading value",
             "type": "number"
         },
+        "ba": {
+            "description": "basis (for futures)",
+            "type": "number"
+        },
+        "oi": {
+            "description": "open interest",
+            "type": "number"
+        },
         "mv": {
             "description": "match volume",
             "type": "number"
