@@ -303,9 +303,6 @@ exports.symbolStaticInfoRequestSchema = {
             }
         },
         {
-            "required": [
-                "symbolList"
-            ],
             "properties": {
                 "symbolList": {
                     "type": "array",

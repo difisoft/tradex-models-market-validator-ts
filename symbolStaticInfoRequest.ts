@@ -305,9 +305,6 @@ export const symbolStaticInfoRequestSchema = {
       }
     },
     {
-      "required": [
-        "symbolList"
-      ],
       "properties": {
         "symbolList": {
           "type": "array",
