@@ -216,6 +216,18 @@ import {
 
 
 import {  
+  topForeignerTradingRequestSchema,
+  topForeignerTradingRequestValidator,
+} from "./topForeignerTradingRequest";
+
+
+import {  
+  topForeignerTradingResponseSchema,
+  topForeignerTradingResponseValidator,
+} from "./topForeignerTradingResponse";
+
+
+import {  
   tradingViewDeleteChartRequestSchema,
   tradingViewDeleteChartRequestValidator,
 } from "./tradingViewDeleteChartRequest";
@@ -383,6 +395,10 @@ export {
   symbolStaticInfoRequestValidator,
   symbolStaticInfoResponseSchema,
   symbolStaticInfoResponseValidator,
+  topForeignerTradingRequestSchema,
+  topForeignerTradingRequestValidator,
+  topForeignerTradingResponseSchema,
+  topForeignerTradingResponseValidator,
   tradingViewDeleteChartRequestSchema,
   tradingViewDeleteChartRequestValidator,
   tradingViewDeleteChartResponseSchema,
