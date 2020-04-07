@@ -344,7 +344,7 @@ exports.topForeignerTradingRequestSchema = {
                     ]
                 },
                 "fetchCount": {
-                    "description": "The number of record that user want to see at each page",
+                    "description": "The number of record that user want to see at each page, default = 10",
                     "type": [
                         "integer",
                         "null"
