@@ -11,8 +11,8 @@ exports.stockRankingTopResponseSchema = {
             "description": "marketType",
             "type": "string"
         },
-        "cd": {
-            "description": "code",
+        "s": {
+            "description": "symbol code",
             "type": "string"
         },
         "cl": {
@@ -43,15 +43,15 @@ exports.stockRankingTopResponseSchema = {
             "description": "change",
             "type": "number"
         },
-        "r": {
+        "ra": {
             "description": "rate",
             "type": "number"
         },
-        "tv": {
+        "vo": {
             "description": "trading Volume",
             "type": "number"
         },
-        "tr": {
+        "va": {
             "description": "trading Value",
             "type": "number"
         },
