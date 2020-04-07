@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Ajv = require("ajv");
-exports.stockRankingUpDownRequestSchema = {
-    "id": "http://tradex.techx.vn/market/stockRankingUpDownRequest",
+exports.stockRankingTopRequestSchema = {
+    "id": "http://tradex.techx.vn/market/stockRankingTopRequest",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "stockRankingUpDownRequest schema",
+    "description": "stockRankingTopRequest schema",
     "type": "object",
     "allOf": [
         {
@@ -305,7 +305,7 @@ exports.stockRankingUpDownRequestSchema = {
         {
             "properties": {
                 "marketType": {
-                    "description": "market: ALL, HNX, HOSE, UPCOM, default ALL",
+                    "description": "market: ALL, HNX, HOSE, UPCOM, default ALL ",
                     "oneOf": [
                         {
                             "type": "null"
@@ -317,6 +317,24 @@ exports.stockRankingUpDownRequestSchema = {
                                 "HNX",
                                 "HOSE",
                                 "UPCOM"
+                            ]
+                        }
+                    ]
+                },
+                "sortType": {
+                    "description": "sort type: POWER, CHANGE, RATE, TRADING_VALUE, TRADING_VOLUME, default TRADING_VOLUME",
+                    "oneOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "POWER",
+                                "CHANGE",
+                                "RATE",
+                                "TRADING_VALUE",
+                                "TRADING_VOLUME"
                             ]
                         }
                     ]
@@ -336,24 +354,8 @@ exports.stockRankingUpDownRequestSchema = {
                         }
                     ]
                 },
-                "fromDate": {
-                    "description": "fromDate (yyyyMMdd)",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "pattern": "^[0-9]{8}$"
-                },
-                "toDate": {
-                    "description": "toDate (yyyyMMdd)",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "pattern": "^[0-9]{8}$"
-                },
                 "offset": {
-                    "description": "offset",
+                    "description": "offset, default 0",
                     "type": [
                         "number",
                         "null"
@@ -372,12 +374,12 @@ exports.stockRankingUpDownRequestSchema = {
         }
     ]
 };
-let stockRankingUpDownRequestAjv = null;
-function stockRankingUpDownRequestValidator() {
-    if (stockRankingUpDownRequestAjv == null) {
-        stockRankingUpDownRequestAjv = new Ajv({ validateSchema: false }).compile(exports.stockRankingUpDownRequestSchema);
+let stockRankingTopRequestAjv = null;
+function stockRankingTopRequestValidator() {
+    if (stockRankingTopRequestAjv == null) {
+        stockRankingTopRequestAjv = new Ajv({ validateSchema: false }).compile(exports.stockRankingTopRequestSchema);
     }
-    return stockRankingUpDownRequestAjv;
+    return stockRankingTopRequestAjv;
 }
-exports.stockRankingUpDownRequestValidator = stockRankingUpDownRequestValidator;
-//# sourceMappingURL=stockRankingUpDownRequest.js.map
+exports.stockRankingTopRequestValidator = stockRankingTopRequestValidator;
+//# sourceMappingURL=stockRankingTopRequest.js.map

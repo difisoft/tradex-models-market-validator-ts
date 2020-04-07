@@ -3,10 +3,10 @@
 * This file is automatic generated
 */
 import * as Ajv from 'ajv';
-export const stockRankingUpDownRequestSchema = {
-  "id": "http://tradex.techx.vn/market/stockRankingUpDownRequest",
+export const stockRankingTopRequestSchema = {
+  "id": "http://tradex.techx.vn/market/stockRankingTopRequest",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "stockRankingUpDownRequest schema",
+  "description": "stockRankingTopRequest schema",
   "type": "object",
   "allOf": [
     {
@@ -307,7 +307,7 @@ export const stockRankingUpDownRequestSchema = {
     {
       "properties": {
         "marketType": {
-          "description": "market: ALL, HNX, HOSE, UPCOM, default ALL",
+          "description": "market: ALL, HNX, HOSE, UPCOM, default ALL ",
           "oneOf": [
             {
               "type": "null"
@@ -319,6 +319,24 @@ export const stockRankingUpDownRequestSchema = {
                 "HNX",
                 "HOSE",
                 "UPCOM"
+              ]
+            }
+          ]
+        },
+        "sortType": {
+          "description": "sort type: POWER, CHANGE, RATE, TRADING_VALUE, TRADING_VOLUME, default TRADING_VOLUME",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "enum": [
+                "POWER",
+                "CHANGE",
+                "RATE",
+                "TRADING_VALUE",
+                "TRADING_VOLUME"
               ]
             }
           ]
@@ -338,24 +356,8 @@ export const stockRankingUpDownRequestSchema = {
             }
           ]
         },
-        "fromDate": {
-          "description": "fromDate (yyyyMMdd)",
-          "type": [
-            "string",
-            "null"
-          ],
-          "pattern": "^[0-9]{8}$"
-        },
-        "toDate": {
-          "description": "toDate (yyyyMMdd)",
-          "type": [
-            "string",
-            "null"
-          ],
-          "pattern": "^[0-9]{8}$"
-        },
         "offset": {
-          "description": "offset",
+          "description": "offset, default 0",
           "type": [
             "number",
             "null"
@@ -374,11 +376,11 @@ export const stockRankingUpDownRequestSchema = {
     }
   ]
 };
-let stockRankingUpDownRequestAjv = null;
-export function stockRankingUpDownRequestValidator() {
-  if (stockRankingUpDownRequestAjv == null) {
-    stockRankingUpDownRequestAjv = new Ajv({validateSchema: false}).compile(stockRankingUpDownRequestSchema);
+let stockRankingTopRequestAjv = null;
+export function stockRankingTopRequestValidator() {
+  if (stockRankingTopRequestAjv == null) {
+    stockRankingTopRequestAjv = new Ajv({validateSchema: false}).compile(stockRankingTopRequestSchema);
   }
-  return stockRankingUpDownRequestAjv;
+  return stockRankingTopRequestAjv;
 }
       

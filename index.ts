@@ -96,6 +96,18 @@ import {
 
 
 import {  
+  stockRankingTopRequestSchema,
+  stockRankingTopRequestValidator,
+} from "./stockRankingTopRequest";
+
+
+import {  
+  stockRankingTopResponseSchema,
+  stockRankingTopResponseValidator,
+} from "./stockRankingTopResponse";
+
+
+import {  
   stockRankingTradeRequestSchema,
   stockRankingTradeRequestValidator,
 } from "./stockRankingTradeRequest";
@@ -331,6 +343,10 @@ export {
   putthroughDealRequestValidator,
   putthroughDealResponseSchema,
   putthroughDealResponseValidator,
+  stockRankingTopRequestSchema,
+  stockRankingTopRequestValidator,
+  stockRankingTopResponseSchema,
+  stockRankingTopResponseValidator,
   stockRankingTradeRequestSchema,
   stockRankingTradeRequestValidator,
   stockRankingTradeResponseSchema,

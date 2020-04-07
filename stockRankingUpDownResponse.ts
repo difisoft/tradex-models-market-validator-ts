@@ -15,6 +15,10 @@ export const stockRankingUpDownResponseSchema = {
       "items": {
         "type": "object",
         "properties": {
+          "mt": {
+            "description": "marketType",
+            "type": "string"
+          },
           "cd": {
             "description": "code",
             "type": "string"
@@ -84,6 +88,10 @@ export const stockRankingUpDownResponseSchema = {
       "items": {
         "type": "object",
         "properties": {
+          "mt": {
+            "description": "marketType",
+            "type": "string"
+          },
           "cd": {
             "description": "code",
             "type": "string"
@@ -153,6 +161,10 @@ export const stockRankingUpDownResponseSchema = {
       "items": {
         "type": "object",
         "properties": {
+          "mt": {
+            "description": "marketType",
+            "type": "string"
+          },
           "cd": {
             "description": "code",
             "type": "string"
