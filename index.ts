@@ -96,6 +96,18 @@ import {
 
 
 import {  
+  stockOrderMatchingRequestSchema,
+  stockOrderMatchingRequestValidator,
+} from "./stockOrderMatchingRequest";
+
+
+import {  
+  stockOrderMatchingResponseSchema,
+  stockOrderMatchingResponseValidator,
+} from "./stockOrderMatchingResponse";
+
+
+import {  
   stockRankingTopRequestSchema,
   stockRankingTopRequestValidator,
 } from "./stockRankingTopRequest";
@@ -367,6 +379,10 @@ export {
   putthroughDealRequestValidator,
   putthroughDealResponseSchema,
   putthroughDealResponseValidator,
+  stockOrderMatchingRequestSchema,
+  stockOrderMatchingRequestValidator,
+  stockOrderMatchingResponseSchema,
+  stockOrderMatchingResponseValidator,
   stockRankingTopRequestSchema,
   stockRankingTopRequestValidator,
   stockRankingTopResponseSchema,
