@@ -8,12 +8,12 @@ export const symbolDailyReturnsResponseSchema = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "symbolDailyReturnsResponse schema",
   "type": "object",
-  "properties": {
-    "additionalProperties": {
-      "type": "array",
-      "items": {
-        "type": "number"
-      }
+  "additionalProperties": {
+    "type": "array",
+    "description": "properties name is symbol code",
+    "items": {
+      "type": "number",
+      "description": "list of returns"
     }
   }
 };

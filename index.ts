@@ -60,6 +60,18 @@ import {
 
 
 import {  
+  marketLiquidityRequestSchema,
+  marketLiquidityRequestValidator,
+} from "./marketLiquidityRequest";
+
+
+import {  
+  marketLiquidityResponseSchema,
+  marketLiquidityResponseValidator,
+} from "./marketLiquidityResponse";
+
+
+import {  
   marketSessionStatusRequestSchema,
   marketSessionStatusRequestValidator,
 } from "./marketSessionStatusRequest";
@@ -367,6 +379,10 @@ export {
   indexStockListRequestValidator,
   indexStockListResponseSchema,
   indexStockListResponseValidator,
+  marketLiquidityRequestSchema,
+  marketLiquidityRequestValidator,
+  marketLiquidityResponseSchema,
+  marketLiquidityResponseValidator,
   marketSessionStatusRequestSchema,
   marketSessionStatusRequestValidator,
   marketSessionStatusResponseSchema,
