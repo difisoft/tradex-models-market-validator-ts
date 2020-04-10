@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Ajv = require("ajv");
-exports.stockOrderMatchingResponseSchema = {
-    "id": "http://tradex.techx.vn/market/stockOrderMatchingResponse",
+exports.symbolTickSizeMatchResponseSchema = {
+    "id": "http://tradex.techx.vn/market/symbolTickSizeMatchResponse",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "stockOrderMatchingResponse schema",
+    "description": "symbolTickSizeMatchResponse schema",
     "type": "object",
     "properties": {
         "data": {
@@ -26,12 +26,12 @@ exports.stockOrderMatchingResponseSchema = {
         }
     }
 };
-let stockOrderMatchingResponseAjv = null;
-function stockOrderMatchingResponseValidator() {
-    if (stockOrderMatchingResponseAjv == null) {
-        stockOrderMatchingResponseAjv = new Ajv({ validateSchema: false }).compile(exports.stockOrderMatchingResponseSchema);
+let symbolTickSizeMatchResponseAjv = null;
+function symbolTickSizeMatchResponseValidator() {
+    if (symbolTickSizeMatchResponseAjv == null) {
+        symbolTickSizeMatchResponseAjv = new Ajv({ validateSchema: false }).compile(exports.symbolTickSizeMatchResponseSchema);
     }
-    return stockOrderMatchingResponseAjv;
+    return symbolTickSizeMatchResponseAjv;
 }
-exports.stockOrderMatchingResponseValidator = stockOrderMatchingResponseValidator;
-//# sourceMappingURL=stockOrderMatchingResponse.js.map
+exports.symbolTickSizeMatchResponseValidator = symbolTickSizeMatchResponseValidator;
+//# sourceMappingURL=symbolTickSizeMatchResponse.js.map

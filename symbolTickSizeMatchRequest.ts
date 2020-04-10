@@ -3,10 +3,10 @@
 * This file is automatic generated
 */
 import * as Ajv from 'ajv';
-export const stockOrderMatchingRequestSchema = {
-  "id": "http://tradex.techx.vn/market/stockOrderMatchingRequest",
+export const symbolTickSizeMatchRequestSchema = {
+  "id": "http://tradex.techx.vn/market/symbolTickSizeMatchRequest",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "stockOrderMatchingRequest schema",
+  "description": "symbolTickSizeMatchRequest schema",
   "type": "object",
   "allOf": [
     {
@@ -306,22 +306,22 @@ export const stockOrderMatchingRequestSchema = {
     },
     {
       "required": [
-        "indexCode"
+        "symbol"
       ],
       "properties": {
-        "indexCode": {
-          "description": "indexCode",
+        "symbol": {
+          "description": "symbol data",
           "type": "string"
         }
       }
     }
   ]
 };
-let stockOrderMatchingRequestAjv = null;
-export function stockOrderMatchingRequestValidator() {
-  if (stockOrderMatchingRequestAjv == null) {
-    stockOrderMatchingRequestAjv = new Ajv({validateSchema: false}).compile(stockOrderMatchingRequestSchema);
+let symbolTickSizeMatchRequestAjv = null;
+export function symbolTickSizeMatchRequestValidator() {
+  if (symbolTickSizeMatchRequestAjv == null) {
+    symbolTickSizeMatchRequestAjv = new Ajv({validateSchema: false}).compile(symbolTickSizeMatchRequestSchema);
   }
-  return stockOrderMatchingRequestAjv;
+  return symbolTickSizeMatchRequestAjv;
 }
       

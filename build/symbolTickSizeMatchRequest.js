@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Ajv = require("ajv");
-exports.stockOrderMatchingRequestSchema = {
-    "id": "http://tradex.techx.vn/market/stockOrderMatchingRequest",
+exports.symbolTickSizeMatchRequestSchema = {
+    "id": "http://tradex.techx.vn/market/symbolTickSizeMatchRequest",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "stockOrderMatchingRequest schema",
+    "description": "symbolTickSizeMatchRequest schema",
     "type": "object",
     "allOf": [
         {
@@ -304,23 +304,23 @@ exports.stockOrderMatchingRequestSchema = {
         },
         {
             "required": [
-                "indexCode"
+                "symbol"
             ],
             "properties": {
-                "indexCode": {
-                    "description": "indexCode",
+                "symbol": {
+                    "description": "symbol data",
                     "type": "string"
                 }
             }
         }
     ]
 };
-let stockOrderMatchingRequestAjv = null;
-function stockOrderMatchingRequestValidator() {
-    if (stockOrderMatchingRequestAjv == null) {
-        stockOrderMatchingRequestAjv = new Ajv({ validateSchema: false }).compile(exports.stockOrderMatchingRequestSchema);
+let symbolTickSizeMatchRequestAjv = null;
+function symbolTickSizeMatchRequestValidator() {
+    if (symbolTickSizeMatchRequestAjv == null) {
+        symbolTickSizeMatchRequestAjv = new Ajv({ validateSchema: false }).compile(exports.symbolTickSizeMatchRequestSchema);
     }
-    return stockOrderMatchingRequestAjv;
+    return symbolTickSizeMatchRequestAjv;
 }
-exports.stockOrderMatchingRequestValidator = stockOrderMatchingRequestValidator;
-//# sourceMappingURL=stockOrderMatchingRequest.js.map
+exports.symbolTickSizeMatchRequestValidator = symbolTickSizeMatchRequestValidator;
+//# sourceMappingURL=symbolTickSizeMatchRequest.js.map

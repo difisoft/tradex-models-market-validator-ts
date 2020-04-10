@@ -108,18 +108,6 @@ import {
 
 
 import {  
-  stockOrderMatchingRequestSchema,
-  stockOrderMatchingRequestValidator,
-} from "./stockOrderMatchingRequest";
-
-
-import {  
-  stockOrderMatchingResponseSchema,
-  stockOrderMatchingResponseValidator,
-} from "./stockOrderMatchingResponse";
-
-
-import {  
   stockRankingTopRequestSchema,
   stockRankingTopRequestValidator,
 } from "./stockRankingTopRequest";
@@ -249,6 +237,18 @@ import {
   symbolStaticInfoResponseSchema,
   symbolStaticInfoResponseValidator,
 } from "./symbolStaticInfoResponse";
+
+
+import {  
+  symbolTickSizeMatchRequestSchema,
+  symbolTickSizeMatchRequestValidator,
+} from "./symbolTickSizeMatchRequest";
+
+
+import {  
+  symbolTickSizeMatchResponseSchema,
+  symbolTickSizeMatchResponseValidator,
+} from "./symbolTickSizeMatchResponse";
 
 
 import {  
@@ -395,10 +395,6 @@ export {
   putthroughDealRequestValidator,
   putthroughDealResponseSchema,
   putthroughDealResponseValidator,
-  stockOrderMatchingRequestSchema,
-  stockOrderMatchingRequestValidator,
-  stockOrderMatchingResponseSchema,
-  stockOrderMatchingResponseValidator,
   stockRankingTopRequestSchema,
   stockRankingTopRequestValidator,
   stockRankingTopResponseSchema,
@@ -443,6 +439,10 @@ export {
   symbolStaticInfoRequestValidator,
   symbolStaticInfoResponseSchema,
   symbolStaticInfoResponseValidator,
+  symbolTickSizeMatchRequestSchema,
+  symbolTickSizeMatchRequestValidator,
+  symbolTickSizeMatchResponseSchema,
+  symbolTickSizeMatchResponseValidator,
   topForeignerTradingRequestSchema,
   topForeignerTradingRequestValidator,
   topForeignerTradingResponseSchema,
