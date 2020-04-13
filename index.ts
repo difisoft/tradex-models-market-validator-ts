@@ -144,6 +144,12 @@ import {
 
 
 import {  
+  symbolDailyReturnsInitRequestSchema,
+  symbolDailyReturnsInitRequestValidator,
+} from "./symbolDailyReturnsInitRequest";
+
+
+import {  
   symbolDailyReturnsRequestSchema,
   symbolDailyReturnsRequestValidator,
 } from "./symbolDailyReturnsRequest";
@@ -407,6 +413,8 @@ export {
   stockRankingUpDownRequestValidator,
   stockRankingUpDownResponseSchema,
   stockRankingUpDownResponseValidator,
+  symbolDailyReturnsInitRequestSchema,
+  symbolDailyReturnsInitRequestValidator,
   symbolDailyReturnsRequestSchema,
   symbolDailyReturnsRequestValidator,
   symbolDailyReturnsResponseSchema,
