@@ -35,6 +35,14 @@ exports.marketSessionStatusResponseSchema = {
             "type": "string",
             "pattern": "^[0-9]{6}$"
         },
+        "lastTradingDate": {
+            "description": "last trading date (YYYYMMDD)",
+            "type": "string"
+        },
+        "previousTradingDate": {
+            "description": "previous trading date (YYYYMMDD)",
+            "type": "string"
+        },
         "type": {
             "description": "type: EQUITY, DERIVATIVES",
             "type": "string",
