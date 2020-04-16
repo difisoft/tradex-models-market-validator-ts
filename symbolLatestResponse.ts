@@ -47,6 +47,10 @@ export const symbolLatestResponseSchema = {
       "description": "expected price",
       "type": "number"
     },
+    "exp": {
+      "description": "exercise price",
+      "type": "number"
+    },
     "ch": {
       "description": "change",
       "type": "number"
