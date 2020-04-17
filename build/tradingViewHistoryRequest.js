@@ -304,6 +304,7 @@ exports.tradingViewHistoryRequestSchema = {
         },
         {
             "required": [
+                "symbol",
                 "from",
                 "to",
                 "resolution"
@@ -324,6 +325,22 @@ exports.tradingViewHistoryRequestSchema = {
                 "resolution": {
                     "description": "resolution",
                     "type": "string"
+                },
+                "fetchCount": {
+                    "description": "Fetch count, default 300 for chart",
+                    "type": [
+                        "null",
+                        "number"
+                    ],
+                    "exclusiveMinimum": 0,
+                    "maximum": 300
+                },
+                "lastTime": {
+                    "description": "date of last received record, in millisecond, like 1586933880, 10 number",
+                    "type": [
+                        "null",
+                        "number"
+                    ]
                 }
             }
         }
