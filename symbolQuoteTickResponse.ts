@@ -10,8 +10,8 @@ export const symbolQuoteTickResponseSchema = {
   "type": "object",
   "properties": {
     "t": {
-      "description": "time (yyyyMMddhhmmss)",
-      "type": "string"
+      "description": "time , in millisecond / 1000, like 1586933880, 10 number",
+      "type": "number"
     },
     "o": {
       "description": "open price",
