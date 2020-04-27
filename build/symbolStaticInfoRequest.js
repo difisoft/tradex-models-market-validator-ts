@@ -305,10 +305,24 @@ exports.symbolStaticInfoRequestSchema = {
         {
             "properties": {
                 "symbolList": {
+                    "description": "list symbol to filter (default query all symbol)",
                     "type": "array",
                     "items": {
                         "type": "string"
                     }
+                },
+                "lastCode": {
+                    "description": "using for query next. (query symbol that has code < lastCode)",
+                    "type": "string"
+                },
+                "fetchCount": {
+                    "description": "The number of record that user want to see at each page, default 100",
+                    "type": [
+                        "integer",
+                        "null"
+                    ],
+                    "maximum": 2000,
+                    "minimum": 1
                 }
             }
         }
