@@ -313,7 +313,7 @@ exports.symbolPeriodRequestSchema = {
                     "type": "string"
                 },
                 "periodType": {
-                    "description": "period type: daily/weekly/monthly",
+                    "description": "period type: DAILY, WEEKLY, MONTHLY, SIX_MONTH",
                     "oneOf": [
                         {
                             "type": "null"
@@ -323,7 +323,8 @@ exports.symbolPeriodRequestSchema = {
                             "enum": [
                                 "DAILY",
                                 "WEEKLY",
-                                "MONTHLY"
+                                "MONTHLY",
+                                "SIX_MONTH"
                             ]
                         }
                     ]
