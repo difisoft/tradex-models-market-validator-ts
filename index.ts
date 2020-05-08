@@ -258,6 +258,18 @@ import {
 
 
 import {  
+  topAiRatingRequestSchema,
+  topAiRatingRequestValidator,
+} from "./topAiRatingRequest";
+
+
+import {  
+  topAiRatingResponseSchema,
+  topAiRatingResponseValidator,
+} from "./topAiRatingResponse";
+
+
+import {  
   topForeignerTradingRequestSchema,
   topForeignerTradingRequestValidator,
 } from "./topForeignerTradingRequest";
@@ -451,6 +463,10 @@ export {
   symbolTickSizeMatchRequestValidator,
   symbolTickSizeMatchResponseSchema,
   symbolTickSizeMatchResponseValidator,
+  topAiRatingRequestSchema,
+  topAiRatingRequestValidator,
+  topAiRatingResponseSchema,
+  topAiRatingResponseValidator,
   topForeignerTradingRequestSchema,
   topForeignerTradingRequestValidator,
   topForeignerTradingResponseSchema,
