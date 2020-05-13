@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.symbolTickSizeMatchResponseValidator = exports.symbolTickSizeMatchResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.symbolTickSizeMatchResponseSchema = {
     "id": "http://tradex.techx.vn/market/symbolTickSizeMatchResponse",

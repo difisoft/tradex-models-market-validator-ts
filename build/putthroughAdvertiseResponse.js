@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.putthroughAdvertiseResponseValidator = exports.putthroughAdvertiseResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.putthroughAdvertiseResponseSchema = {
     "id": "http://tradex.techx.vn/market/putthroughAdvertiseResponse",

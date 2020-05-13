@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.symbolQuoteTickResponseValidator = exports.symbolQuoteTickResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.symbolQuoteTickResponseSchema = {
     "id": "http://tradex.techx.vn/market/symbolQuoteTickResponse",

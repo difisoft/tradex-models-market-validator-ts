@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.fixSecurityListQueryResponseValidator = exports.fixSecurityListQueryResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.fixSecurityListQueryResponseSchema = {
     "id": "http://tradex.techx.vn/market/fixSecurityListQueryResponse",

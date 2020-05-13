@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.marketSessionStatusResponseValidator = exports.marketSessionStatusResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.marketSessionStatusResponseSchema = {
     "id": "http://tradex.techx.vn/market/marketSessionStatusResponse",

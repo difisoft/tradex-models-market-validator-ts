@@ -313,7 +313,14 @@ export const topAiRatingRequestSchema = {
             "null"
           ]
         },
-        "nextKey": {
+        "lastOverAll": {
+          "description": "last overall value from previous query",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lastCode": {
           "description": "last code from previous query",
           "type": [
             "string",

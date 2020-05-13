@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.etfNavDailyRequestValidator = exports.etfNavDailyRequestSchema = void 0;
 const Ajv = require("ajv");
 exports.etfNavDailyRequestSchema = {
     "id": "http://tradex.techx.vn/market/etfNavDailyRequest",

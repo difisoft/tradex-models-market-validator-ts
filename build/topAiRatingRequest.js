@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.topAiRatingRequestValidator = exports.topAiRatingRequestSchema = void 0;
 const Ajv = require("ajv");
 exports.topAiRatingRequestSchema = {
     "id": "http://tradex.techx.vn/market/topAiRatingRequest",
@@ -311,7 +312,14 @@ exports.topAiRatingRequestSchema = {
                         "null"
                     ]
                 },
-                "nextKey": {
+                "lastOverAll": {
+                    "description": "last overall value from previous query",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "lastCode": {
                     "description": "last code from previous query",
                     "type": [
                         "string",

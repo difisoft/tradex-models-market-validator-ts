@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.tradingViewDeleteChartResponseValidator = exports.tradingViewDeleteChartResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.tradingViewDeleteChartResponseSchema = {
     "id": "http://tradex.techx.vn/market/tradingViewDeleteChartResponse",

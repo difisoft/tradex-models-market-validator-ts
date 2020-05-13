@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.symbolStaticInfoResponseValidator = exports.symbolStaticInfoResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.symbolStaticInfoResponseSchema = {
     "id": "http://tradex.techx.vn/market/symbolStaticInfoResponse",

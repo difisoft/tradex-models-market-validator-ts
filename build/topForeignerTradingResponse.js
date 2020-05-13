@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.topForeignerTradingResponseValidator = exports.topForeignerTradingResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.topForeignerTradingResponseSchema = {
     "id": "http://tradex.techx.vn/market/topForeignerTradingResponse",

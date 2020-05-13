@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.indexStockListRequestValidator = exports.indexStockListRequestSchema = void 0;
 const Ajv = require("ajv");
 exports.indexStockListRequestSchema = {
     "id": "http://tradex.techx.vn/market/indexStockListRequest",

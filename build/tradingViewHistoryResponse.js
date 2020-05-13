@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.tradingViewHistoryResponseValidator = exports.tradingViewHistoryResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.tradingViewHistoryResponseSchema = {
     "id": "http://tradex.techx.vn/market/tradingViewHistoryResponse",

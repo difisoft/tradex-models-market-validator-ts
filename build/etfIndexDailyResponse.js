@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.etfIndexDailyResponseValidator = exports.etfIndexDailyResponseSchema = void 0;
 const Ajv = require("ajv");
 exports.etfIndexDailyResponseSchema = {
     "id": "http://tradex.techx.vn/market/etfIndexDailyResponse",

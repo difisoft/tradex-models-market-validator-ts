@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.symbolInfoRequestValidator = exports.symbolInfoRequestSchema = void 0;
 const Ajv = require("ajv");
 exports.symbolInfoRequestSchema = {
     "id": "http://tradex.techx.vn/market/symbolInfoRequest",
