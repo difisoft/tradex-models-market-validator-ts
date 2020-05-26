@@ -39,6 +39,10 @@ exports.foreignerDailyResponseSchema = {
         "hr": {
             "description": "ForeignerHoldRatio",
             "type": "number"
+        },
+        "d": {
+            "description": "date (YYYYMMDD)",
+            "type": "string"
         }
     }
 };
