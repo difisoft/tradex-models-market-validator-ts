@@ -12,6 +12,10 @@ exports.foreignerSummaryResponseSchema = {
             "description": "stock code",
             "type": "string"
         },
+        "m": {
+            "description": "market type (HOSE/HNX/UPCOM)",
+            "type": "string"
+        },
         "ch": {
             "description": "change",
             "type": "number"
