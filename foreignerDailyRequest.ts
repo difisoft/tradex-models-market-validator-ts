@@ -322,6 +322,20 @@ export const foreignerDailyRequestSchema = {
           "maximum": 100,
           "minimum": 1
         },
+        "fromDate": {
+          "description": "from date (yyyymmdd) - default 19700101",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "toDate": {
+          "description": "to date (yyyymmdd) - default today",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "baseDate": {
           "description": "base date foreigner next (yyyymmdd) && to query date < baseDate",
           "type": [

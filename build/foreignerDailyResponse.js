@@ -8,12 +8,28 @@ exports.foreignerDailyResponseSchema = {
     "description": "foreignerDailyResponse schema",
     "type": "object",
     "properties": {
-        "bv": {
-            "description": "ForeignerBuyVolume",
+        "bvo": {
+            "description": "Foreigner buy volume",
             "type": "number"
         },
-        "sv": {
-            "description": "ForeignerSellVolume",
+        "svo": {
+            "description": "Foreigner sell volume",
+            "type": "number"
+        },
+        "nvo": {
+            "description": "Foreigner net volume (ròng)",
+            "type": "number"
+        },
+        "bva": {
+            "description": "Foreigner buy value",
+            "type": "number"
+        },
+        "sva": {
+            "description": "Foreigner sell value",
+            "type": "number"
+        },
+        "nva": {
+            "description": "net value (ròng)",
             "type": "number"
         },
         "tr": {
