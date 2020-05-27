@@ -25,6 +25,10 @@ export const foreignerSummaryResponseSchema = {
       "description": "rate",
       "type": "number"
     },
+    "c": {
+      "description": "close price",
+      "type": "number"
+    },
     "bvo": {
       "description": "Foreigner buy volume",
       "type": "number"
