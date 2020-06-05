@@ -164,6 +164,14 @@ exports.symbolLatestResponseSchema = {
                 "uc": {
                     "description": "unChange count",
                     "type": "number"
+                },
+                "tc": {
+                    "description": "trade count",
+                    "type": "number"
+                },
+                "utc": {
+                    "description": "unTrade count",
+                    "type": "number"
                 }
             }
         },
@@ -177,6 +185,14 @@ exports.symbolLatestResponseSchema = {
                 },
                 "sv": {
                     "description": "sell volume",
+                    "type": "number"
+                },
+                "nva": {
+                    "description": "net buy value",
+                    "type": "number"
+                },
+                "nvo": {
+                    "description": "net buy volume",
                     "type": "number"
                 },
                 "tr": {
