@@ -55,6 +55,10 @@ export const symbolLatestResponseSchema = {
       "description": "expected rate",
       "type": "number"
     },
+    "exv": {
+      "description": "expected volume",
+      "type": "number"
+    },
     "exp": {
       "description": "exercise price",
       "type": "number"
