@@ -72,6 +72,12 @@ import {
 
 
 import {  
+  lastTradingDateResponseSchema,
+  lastTradingDateResponseValidator,
+} from "./lastTradingDateResponse";
+
+
+import {  
   marketLiquidityRequestSchema,
   marketLiquidityRequestValidator,
 } from "./marketLiquidityRequest";
@@ -413,6 +419,8 @@ export {
   indexStockListRequestValidator,
   indexStockListResponseSchema,
   indexStockListResponseValidator,
+  lastTradingDateResponseSchema,
+  lastTradingDateResponseValidator,
   marketLiquidityRequestSchema,
   marketLiquidityRequestValidator,
   marketLiquidityResponseSchema,
