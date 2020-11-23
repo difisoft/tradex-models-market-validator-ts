@@ -216,6 +216,14 @@ exports.symbolLatestResponseSchema = {
                     "type": "number"
                 }
             }
+        },
+        "be": {
+            "description": "break even",
+            "type": "number"
+        },
+        "pe": {
+            "description": "% premium",
+            "type": "number"
         }
     }
 };
